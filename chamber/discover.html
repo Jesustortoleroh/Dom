@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rob Schein's WDD 230 Assignments">
+    <link rel="stylesheet" href="../chamber/css/normalize.css">
+    <link rel="stylesheet" href="../chamber/css/base.css">
+    <link rel="stylesheet" href="../chamber/css/small.css">
+    <link rel="stylesheet" href="../chamber/css/medium.css">
+    <link rel="stylesheet" href="../chamber/css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
+
+
+    <title>Discover</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="../images/logo.jpg " alt= "chamber logo" width="50"></a>
+
+            <p class="commerceTitle">Olathe Chamber of Commerce</p>
+
+            <ul class="menu">
+                <li><a class="hamBtn" href="#">Menu</a></li>
+                <li><a href="../chamber/discover.html">Discover</a></li>
+                <li><a href="../chamber/directory.html">Directory</a></li>
+                <li><a href="../chamber/join.html">Join</a></li>
+                <li><a href="../chamber/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="http://www.facebook.com"><img class="facebook" src="../images/fb.webp" alt="facebook icon"
+                    width="24" height="24"></a>
+            <a href="http://www.twitter.com"><img class="twitter" src="../images/twitter.webp" alt="twitter icon"
+                    width="24" height="24"></a>
+        </div>
+        <p id="today">todays date</p>
+    </header>
+    <br>
+    <main>
+        <div class="discoverInfo">
+            <h1>Olathe, Kansas</h1>
+            <ul class="facts">
+                <li>Founded: 1857</li>
+                <li>Population: 141,290</li>
+                <li>Elevation: 1,037 ft</li>
+                <li>Notable Geography: Lake Olathe, Cedar Lake</li>
+                <li>Name Origin: "Beautiful" in the native Shawnee language</li>
+            </ul>
+        </div>
+        <div class="discoverImgDiv">
+            <img src="/images/load.jpg" data-src="../images/olatheflag.png" alt="origin">
+            <p>Olathe is located in eastern Kansas near Kansas City and the Missouri border. It is southwest of Kansas City and near Lenexa, Overland Park, De Soto, and Gardner.
+                Olathe was founded in 1857 by Dr. John T. Barton. Olathe means "beautiful" in the native Shawnee language.
+            </p>
+        </div>
+        <div class="discoverImgDiv">
+            <img src="/images/load.jpg" data-src="../images/bleedingkansas.jpg" alt="bleeding kansas">
+            <p>Olathe was caught in the legality of slavery conflict known as Bleeding Kansas within the first few years it was founded. It took until 1865 for the Olathe military
+                post to be decomissioned.</p>
+        </div>
+        <div class="discoverImgDiv">
+            <img src="/images/load.jpg" data-src="../images/oregontrail.jpg" alt="trail stop">
+            <p>One of the most important purposes of Olathe was its usage as a stop on multiple major trails. The Oregon, California, and Santa Fe trails all passed through Olathe and 
+                travelers resupplied and rested here often.</p>
+        </div>
+        <div class="discoverImgDiv">
+            <img src="/images/load.jpg" data-src="../images/mahaffie.jpg" alt="mahaffie historic site">
+            <p>The Mahaffie House was a popular resupply location for travelers on the major trails. Today it serves as a historical site that features costumes, stagecoach rides, animals, 
+                re-enactments, and other activities from that time period.
+            </p>
+        </div>
+        <div class="discoverImgDiv">
+            <img src="/images/load.jpg" data-src="../images/35.png" alt="highways and growth">
+            <p>Once the transcontinental railroad was built, the trails lost some of their relevance and, therefore, so did Olathe. The town stayed stagnant in its growth but 
+                did not fade away completely.
+            </p>
+        </div>
+        <div class="discoverImgDiv">
+            <img src="/images/load.jpg" data-src="../images/olathe.png" alt="growth and best place to live">
+            <p>Interstate highways played a role in Olathe's growth due to its proximity to Kansas City. The entire metropolitan area grew and naturally, so did Olathe. In 2008
+                Olathe was ranked as the 24th fastest growing city in the nation and 11th in a list of the 100 best cities to live in the U.S.
+            </p>
+        </div>
+        <div class="discoverImgDiv">
+            <img src="/images/load.jpg" data-src="../images/farm.jpg" alt="economy">
+            <p>Olathe has an excess of farmland and prairie to the north, south, and west and produces many crops. Another key element to Olathe's economy are the corporate districts.
+                For example, Olathe employs the most employees for Farmers Insurance Group than any other city in the U.S. despite the company being based in Los Angeles.
+            </p>
+        </div>
+        <div class="discoverImgDiv">
+            <img src="/images/load.jpg" data-src="../images/lakepark.jpg" alt="lakes and parks">
+            <p>Despite having a fairly strong corporate presence, Olathe has an incredible number of parks and trails to offer to visitors. Some trails span across muiltiple
+                cities and provide great outdoor fun and exercise. Olathe is also home to two major lakes, Lake Olathe and Cedar Lake.
+            </p>
+        </div>
+        
+        <p class="visit"><span>Days since last visit: </span><span class="visitor"></span></p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Jesus Tortolero | Venezuela | <a href="http://www.byui.edu/online/"
+                target="_blank">BYU-I Online Learning</a></p><br>
+        <p class="lastupdated">Last Updated: <span id="updated">
+            </span></p>
+        <script src="../js/date.js"></script>
+
+    </footer>
+</body>
+
+<script src="js/responsive_menu.js"></script>
+<script src="js/visit.js"></script>
+<script src="js/lazyload.js"></script>
+
+</html>

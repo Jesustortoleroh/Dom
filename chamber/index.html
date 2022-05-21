@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rob Schein's WDD 230 Assignments">
+    <link rel="stylesheet" href="../chamber/css/normalize.css">
+    <link rel="stylesheet" href="../chamber/css/base.css">
+    <link rel="stylesheet" href="../chamber/css/medium.css">
+    <link rel="stylesheet" href="../chamber/css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
+
+
+    <title>Chamber</title>
+</head>
+
+<body>
+    <div id="banner">
+        <p>🤝🏼 Join us for the chamber meet and greet on Wednesday at 7:00 p.m.</p>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="../images/logo.jpg " alt= "chamber logo" width="50"></a>
+
+            <p class="commerceTitle">Olathe Chamber of Commerce</p>
+            
+            
+            <ul class="menu">
+                <li><a class="hamBtn" href="#">Menu</a></li>
+                <li><a href="../chamber/discover.html">Discover</a></li>
+                <li><a href="../chamber/directory.html">Directory</a></li>
+                <li><a href="../chamber/join.html">Join</a></li>
+                <li><a href="../chamber/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="socials">
+            <a href="http://www.facebook.com"><img class="facebook" src="../images/fb.webp" alt="facebook icon" width="24"
+                    height="24"></a>
+            <a href="http://www.twitter.com"><img class="twitter" src="../images/twitter.webp" alt="twitter icon"
+                    width="24" height="24"></a>
+        </div>
+        <div id="today"></div>
+    </header>
+    <br>
+
+    <main>
+        <div id="chamber-content">
+            <div id="action">
+                <picture>
+                    <source srcset="/images/wdd230-org.jpg" media="(max-width: 600px)">
+                    <img class="heroImg" src="../images/wdd230-org.jpg" alt="chamber conversation" />
+                </picture>
+                <div class="joinBtn">
+                    <a class="heroBtn" href="/chamber/join.html">Join the chamber</a>
+                </div>
+            </div>
+            <div id="events">
+                <h1>Ribbon Cutting</h1>
+                <h2>🔹 The Diamond Shack</h2>
+                <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 pm.</p>
+                <a href="#">More Info...</a>
+            </div>
+            <div id="weather">
+                <h2 class="weather">Weather</h2>
+                <img class="weatherIcon" src="#" alt="">
+                <p class="degree"><span class="temp"></span>&#176;F</p>
+                <p class="iconDesc"></p>
+                <p class="ws">Wind Speed:</p>
+                <p class="windSpeed"></p>
+                <p class="wc">Wind Chill:</p>
+                <p class="wChill"><span class="windChill"></span></p>
+            </div>
+            <div id="news">
+                <h1>News Release</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div id="spotlights">
+                
+
+            </div>
+            <div id="join">
+                <div class="joinUsBtn">
+                    <a class="join" href="join.html">Join Us!</a>
+                </div>
+                <p>Discover how to join the chamber of commerce and how it wil benfit your organization! </p>
+            </div>
+
+
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Jesus Tortolero| Venezuela | <a href="http://www.byui.edu/online/"
+                target="_blank">BYU-I Online Learning</a></p><br>
+        <p class="lastupdated">Last Updated: <span id="updated">
+            </span></p>
+        <script src="../js/date.js"></script>
+
+    </footer>
+</body>
+<script src="js/responsive_menu.js"></script>
+<script src="js/windchill.js"></script>
+<script src="../js/date.js"></script>
+<script src="js/spotlights.js"></script>
+
+</html>

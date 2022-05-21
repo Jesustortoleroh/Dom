@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rob Schein's WDD 230 Assignments">
+    <link rel="stylesheet" href="../chamber/css/normalize.css">
+    <link rel="stylesheet" href="../chamber/css/base.css">
+    <link rel="stylesheet" href="../chamber/css/small.css">
+    <link rel="stylesheet" href="../chamber/css/medium.css">
+    <link rel="stylesheet" href="../chamber/css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
+
+
+    <title>Chamber</title>
+</head>
+
+<body>
+    <div id="banner">
+        <p>🤝🏼 Join us for the chamber meet and greet on Wednesday at 7:00 p.m.</p>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="../images/logo.jpg " alt="chamber logo" width="50"></a>
+
+            <p class="commerceTitle">Olathe Chamber of Commerce</p>
+
+            <ul class="menu">
+                <li><a class="hamBtn" href="#">Menu</a></li>
+                <li><a href="../chamber/discover.html">Discover</a></li>
+                <li><a href="../chamber/directory.html">Directory</a></li>
+                <li><a href="../chamber/join.html">Join</a></li>
+                <li><a href="../chamber/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="http://www.facebook.com"><img class="facebook" src="../images/fb.webp" alt="facebook icon"
+                    width="24" height="24"></a>
+            <a href="http://www.twitter.com"><img class="twitter" src="../images/twitter.webp" alt="twitter icon"
+                    width="24" height="24"></a>
+        </div>
+        <p id="today">todays date</p>
+    </header>
+    <br>
+
+    <main>
+        <div class="joinForm">
+            <h1>Join the Chamber of Commerce</h1>
+            <form method="get" action="./jointhanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="info">First Name* <input type="text" name="fname" required></label>
+                    <label class="info">Last Name* <input type="text" name="lname" required></label>
+                    <label class="info">Title <input type="text" name="title" pattern="([\p{L}\s-]){7,}"
+                            placeholder="Title/Position"></label>
+                    <label class="info">Email* <input type="email" name="email" placeholder="myemail@gmail.com"
+                            required></label>
+                    <label class="info">Phone* <input type="tel" name="phone" placeholder="12356654321"
+                            required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="info">Business Name* <input type="text" name="bName" required></label>
+                    <label class="info">Business Description<textarea name="description"
+                            placeholder="Brief description of business/company"></textarea></label>
+                    <input type="hidden" name="datetime" id="todayDate">
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="level"><input type="radio" name="level" value="NP" required> Non-Profit
+                        Membership</label>
+                    <label class="level"><input type="radio" name="level" value="bronze"> Bronze Membership</label>
+                    <label class="level"><input type="radio" name="level" value="silver"> Silver Membership</label>
+                    <label class="level"><input type="radio" name="level" value="gold"> Gold Membership</label>
+                </fieldset>
+                <aside>
+                    <div class="benefits">
+                        <h2>Memebership Benefits</h2>
+                        <h3>Non-Profit Members</h3>
+                        <ul>
+                            <li>No annual cost</li>
+                            <li>Business listing in our directory</li>
+                            <li>Email alerts regarding chamber events</li>
+                        </ul>
+                        <h3>Bronze Members</h3>
+                        <ul>
+                            <li>Annual cost: $100</li>
+                            <li>Business listing in our directory</li>
+                            <li>Company spotlight on our website</li>
+                            <li>Email alerts regarding chamber events</li>
+                        </ul>
+                        <h3>Silver Members</h3>
+                        <ul>
+                            <li>Annual Cost: $250</li>
+                            <li>Business listing in our directory</li>
+                            <li>Company spotlight on our website</li>
+                            <li>Email alerts regarding chamber events</li>
+                            <li>Discounts for business needs</li>
+                        </ul>
+                        <h3>Gold Members</h3>
+                        <ul>
+                            <li>Annual Cost: $500</li>
+                            <li>Business listing in our directory</li>
+                            <li>Company spotlight on our website</li>
+                            <li>Email alerts regarding chamber events</li>
+                            <li>Discounts for business needs</li>
+                            <li>Access to chamber sponsored trainings and lectures</li>
+                            <li>Bonus marketing and networking events</li>
+                        </ul>
+                    </div>
+                </aside>
+                <label class="submit"><input type="submit" value="Join Now" class="submitBtn"></label>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Jesus Tortolero | Venezuela | <a href="http://www.byui.edu/online/"
+                target="_blank">BYU-I Online Learning</a></p><br>
+        <p class="lastupdated">Last Updated: <span id="updated">
+            </span></p>
+        <script src="../js/date.js"></script>
+
+    </footer>
+</body>
+<script src="js/responsive_menu.js"></script>
+<script src="js/windchill.js"></script>
+<script src="../js/date.js"></script>
+
+</html>
